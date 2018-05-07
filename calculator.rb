@@ -1,7 +1,7 @@
 # A program that adds, subtracts, multiplys, and divides.
 
 def operation_selection
- puts "Type 1 to add, 2 to subtract, 3 to multiply,4 to divide two numbers, 5 to find the square of a number. "
+ puts "Type 1 to add, 2 to subtract, 3 to multiply,4 to divide two numbers, 5 to find the square of a number, 6 to find the square root of a number. "
 
 operation_selection = gets.chomp
 
@@ -15,6 +15,9 @@ operation_selection = gets.chomp
       div_num
     elsif operation_selection == '5'
       square_num
+    elsif operation_selection == '6'
+      sqrt_num
+
     else return "error"
 
     end
@@ -87,10 +90,18 @@ returnval = x.to_f * x.to_f
 puts "here is the square of your number  " + returnval.to_s
 
 
+end
+
+def sqrt_num
+
+puts "Please enter the number that you want to find the square root of"
+x = gets.chomp.to_f
+
+returnval =  Math.sqrt(x.to_f)
+puts "Here is the square root of your number " + returnval.to_s
 
 
 end
-
 
 
 x = operation_selection
