@@ -86,6 +86,9 @@ x = gets.chomp.to_f
 returnval = x.to_f * x.to_f
 puts "here is the square of your number  " + returnval.to_s
 
+
+
+
 end
 
 
